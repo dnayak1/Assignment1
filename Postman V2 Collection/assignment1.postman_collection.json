@@ -1,0 +1,171 @@
+{
+	"variables": [],
+	"info": {
+		"name": "assignment1",
+		"_postman_id": "ff01403d-df89-defb-5a03-dd15d5130271",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Remote Register",
+			"request": {
+				"url": "13.59.255.195:5001/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"akshay@gmail.com\",\n    \"password\":\"password\",\n    \"age\":\"25\",\n    \"weight\":\"90\",\n    \"address\":\"chicago\",\n    \"name\":\"Akshay A\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remote Login",
+			"request": {
+				"url": "13.59.255.195:5001/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"dhiraj@gmail.com\",\n    \"password\":\"password\"\n}"
+				},
+				"description": "login"
+			},
+			"response": []
+		},
+		{
+			"name": "Remote Profile View",
+			"request": {
+				"url": "13.59.255.195:5001/api/view",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRoaXJhakBnbWFpbC5jb20iLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiYWdlIjozNSwid2VpZ2h0Ijo4MCwiYWRkcmVzcyI6ImNoYXJsb3R0ZSIsIm5hbWUiOiJkaGlyYWogbmF5YWsiLCJpYXQiOjE1MDQxMjcxOTN9.BJmEr6oh0WPc5Ok5gNMDCTW_SQdXiXrdans99OOxK18\"\n}"
+				},
+				"description": "view"
+			},
+			"response": []
+		},
+		{
+			"name": "Remote Update",
+			"request": {
+				"url": "13.59.255.195:5001/api/update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRoaXJhakBnbWFpbC5jb20iLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiYWdlIjozNSwid2VpZ2h0Ijo4MCwiYWRkcmVzcyI6ImNoYXJsb3R0ZSIsIm5hbWUiOiJkaGlyYWogbmF5YWsiLCJpYXQiOjE1MDQxMjcxOTN9.BJmEr6oh0WPc5Ok5gNMDCTW_SQdXiXrdans99OOxK18\",\n    \"user\": {\n        \"email\": \"dhiraj@gmail.co\",\n        \"password\": \"password\",\n        \"age\": 35,\n        \"weight\": 100,\n        \"address\": \"North Carolina\",\n        \"name\": \"dhiraj nayak\"\n    }\n}"
+				},
+				"description": "update"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/register",
+			"request": {
+				"url": "localhost:5001/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"akshay@gmail.com\",\n    \"password\":\"password\",\n    \"age\":\"25\",\n    \"weight\":\"90\",\n    \"address\":\"chicago\",\n    \"name\":\"Akshay A\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/view",
+			"request": {
+				"url": "localhost:5001/api/view",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRoaXJhakBnbWFpbC5jb20iLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiYWdlIjozNSwid2VpZ2h0Ijo4MCwiYWRkcmVzcyI6ImNoYXJsb3R0ZSIsIm5hbWUiOiJkaGlyYWogbmF5YWsiLCJpYXQiOjE1MDQxMjcxOTN9.BJmEr6oh0WPc5Ok5gNMDCTW_SQdXiXrdans99OOxK18\"\n}"
+				},
+				"description": "view"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/login",
+			"request": {
+				"url": "localhost:5001/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"dhiraj@gmail.com\",\n    \"password\":\"password\"\n}"
+				},
+				"description": "login"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/update",
+			"request": {
+				"url": "localhost:5001/api/update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRoaXJhakBnbWFpbC5jb20iLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiYWdlIjozNSwid2VpZ2h0Ijo4MCwiYWRkcmVzcyI6ImNoYXJsb3R0ZSIsIm5hbWUiOiJkaGlyYWogbmF5YWsiLCJpYXQiOjE1MDQxMjcxOTN9.BJmEr6oh0WPc5Ok5gNMDCTW_SQdXiXrdans99OOxK18\",\n    \"user\": {\n        \"email\": \"dhiraj@gmail.co\",\n        \"password\": \"password\",\n        \"age\": 35,\n        \"weight\": 100,\n        \"address\": \"North Carolina\",\n        \"name\": \"dhiraj nayak\"\n    }\n}"
+				},
+				"description": "update"
+			},
+			"response": []
+		}
+	]
+}
